@@ -1,5 +1,5 @@
 <h1>Create a new list</h1>
-
+<p><%= link_to 'Back home', lists_path, class: "btn btn-info m-3" %></p>
 
 <%= simple_form_for(@list) do |f| %>
   <%= f.error_notification %>
@@ -10,6 +10,7 @@
   </div>
 
   <div class="form-actions">
-    <%= f.button :submit, class: 'btn btn-info' %>
+    <%= f.button :submit, class: 'btn btn-info m-3' %>
   </div>
 <% end %>
+
