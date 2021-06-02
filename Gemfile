@@ -31,6 +31,10 @@ gem 'bootsnap', '>= 1.4.2', require: false
 gem 'rspec-rails', group: [ :test ]
 gem 'rails-controller-testing', group: [ :test ]
 
+gem 'autoprefixer-rails', '10.2.5'
+gem 'font-awesome-sass', '~> 5.12.0'
+gem 'simple_form'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
