@@ -7,6 +7,7 @@ require 'open-uri'
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 Movie.destroy_all
+List.destroy_all
 
 url = 'http://tmdb.lewagon.com/movie/top_rated?api_key=<your_api_key>'
 
@@ -23,3 +24,7 @@ movies.each do |movie|
   movie = Movie.create(title: title, overview: overview, poster_url: poster_url, rating: rating)
   puts movie.title
 end
+
+List.create(name: 'Drama')
+List.create(name: 'Thriller')
+List.create(name: 'Action')
