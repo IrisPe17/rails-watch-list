@@ -1,6 +1,7 @@
-<h1>Create a Bookmark</h1>
-<p><%= link_to 'Back home', lists_path, class: "btn btn-info m-3" %></p>
-
+<div class="banner">
+  <h1>Create a Bookmark</h1>
+  <p><%= link_to 'Back home', lists_path, class: "btn btn-info m-3" %></p>
+</div>
 
 <h3>Add a movie to <%= @list.name %> list </h3>
   <%= simple_form_for [@list, @bookmark] do |f| %>

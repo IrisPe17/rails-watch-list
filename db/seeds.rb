@@ -1,6 +1,6 @@
 require 'open-uri'
 
-# Bookmark.destroy_all
+Bookmark.destroy_all
 Movie.destroy_all
 List.destroy_all
 
