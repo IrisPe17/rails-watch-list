@@ -1,12 +1,18 @@
-<h1><%=@list.name%></h1>
+<div class='container'>
+  <h1><%=@list.name%></h1>
+</div>
 
-<ul>
-<% @bookmarks.each do |bookmark| %>
-	<li>
-	<%= bookmark.movie.title %>  - <%= bookmark.movie.overview %> 
-	</li> 
-<% end %>
-</ul>
+<div class="grid">
+  <div class="card-product">
+    <% @bookmarks.each do |bookmark| %>
+	    <div class="card-product-infos">
+	      <h2><%= bookmark.movie.title %></h2>
+        <p><%= bookmark.movie.overview %> </p>
+	      <p><%= link_to 'Delete a bookmark', bookmark_path(bookmark), method: :delete, data: { confirm: 'Are you sure you want to delete this bookmark?' }  %></p>
+	  </div> 
+    <% end %>
+  </div>
+</div>
 
 
 
