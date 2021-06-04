@@ -1,18 +1,20 @@
-<div class="banner">
-  <h1>Create a new list</h1>
-</div>
+<div class="container py-5">
+  <div class="row">
+    <div class ="col-12 col-md-6 offset-lg-2">
+      <h2>Create a new list</h2>
 
-<div>
-  <%= simple_form_for(@list) do |f| %>
-    <%= f.error_notification %>
-    <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+      <%= simple_form_for(@list) do |f| %>
+        <%= f.error_notification %>
+        <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
 
-    <div class="form-inputs">
-     <%= f.input :name %>
+        <div class="form-inputs">
+          <%= f.input :name %>
+        </div>
+
+        <div class="form-actions">
+          <%= f.button :submit, class: 'btn btn-info m-3' %>
+        </div>
+      <% end %>
     </div>
-
-    <div class="form-actions">
-      <%= f.button :submit, class: 'btn btn-info m-3' %>
-    </div>
-  <% end %>
+  </div>
 </div>
