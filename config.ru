@@ -2,8 +2,4 @@
 
 require_relative 'config/environment'
 
-use Rack::Static,
-    urls: ['/assets', '/assets/images'],
-    root: 'app'
-
 run Rails.application
