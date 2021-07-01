@@ -7,11 +7,12 @@
 @import "button";
 
 a {
-  color: whitesmoke;
+  color: $whitesmoke;
   text-decoration: none;
+  transition: 1s ease;
   &:hover {
     text-decoration: none;
-    color: black;
+    color: $yellow;
   }
 }
 
