@@ -4,13 +4,15 @@
 @import "navbar";
 @import "banner";
 @import "card";
+@import "button";
 
-a { 
-  color: whitesmoke;
-  text-decoration: none; 
+a {
+  color: $whitesmoke;
+  text-decoration: none;
+  transition: 1s ease;
   &:hover {
     text-decoration: none;
-    color:black; 
+    color: $yellow;
   }
 }
 
@@ -18,7 +20,9 @@ a {
   color: indigo;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: Raleway, Helvetica, sans-serif;
 }
 a {

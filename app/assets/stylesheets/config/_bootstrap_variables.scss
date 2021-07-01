@@ -4,22 +4,22 @@
 // 3. You can override them below!
 
 // General style
-$font-family-sans-serif:  $body-font;
-$headings-font-family:    $headers-font;
-$body-bg:  rgba(12, 1, 26, 0.932);
+$font-family-sans-serif: $body-font;
+$headings-font-family: $headers-font;
+$body-bg: rgba(12, 1, 26, 0.932);
 $font-size-base: 1rem;
 // $headings-color: white;
 
 // Colors
-$body-color: white;
-$primary:    $blue;
-$success:    $green;
-$info:       rgba(121, 9, 155, 0.945);
-$danger:     $red;
-$warning:    $orange;
+$body-color: rgba(255, 255, 255, 0.938);
+$primary: $blue;
+$success: $green;
+$info: rgba(121, 9, 155, 0.945);
+$danger: $red;
+$warning: $orange;
 
 // Buttons & inputs' radius
-$border-radius:    2px;
+$border-radius: 2px;
 $border-radius-lg: 2px;
 $border-radius-sm: 2px;
 
