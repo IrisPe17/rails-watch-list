@@ -2,10 +2,13 @@
   <h1>Create a Bookmark</h1>
   <p><%= link_to 'Back home', lists_path, class: "btn btn-info m-3" %></p>
 </div>
-
-<h3>Add a movie to <%= @list.name %> list </h3>
+<div class="container col-6 col-lg-4 mt-2">
+  <h3>Add a movie to <%= @list.name %> list </h3>
   <%= simple_form_for [@list, @bookmark] do |f| %>
     <%= f.input :comment, placeholder: 'Enter your comment' %>
-      <%= f.association :movie, prompt: 'Select movie', input_html: { class: 'select2' } %>
-        <%= f.submit class: 'btn btn-info m-3' %>
+    <%= f.association :movie, prompt: 'Select movie', input_html: { class: 'select2' } %>
+    <div class="container text-center">
+      <%= f.submit class: 'btn btn-info m-3' %>
+    </div>
   <% end %>
+</div>

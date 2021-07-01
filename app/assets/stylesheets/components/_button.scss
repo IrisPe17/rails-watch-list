@@ -1,0 +1,9 @@
+.btn-info {
+  background-color: $purple;
+  text-align: center;
+  padding: 4px 12px;
+  transition: 1s ease;
+  &:hover {
+    background-color: $purple-dark;
+  }
+}

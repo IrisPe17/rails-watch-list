@@ -4,13 +4,14 @@
 @import "navbar";
 @import "banner";
 @import "card";
+@import "button";
 
-a { 
+a {
   color: whitesmoke;
-  text-decoration: none; 
+  text-decoration: none;
   &:hover {
     text-decoration: none;
-    color:black; 
+    color: black;
   }
 }
 
@@ -18,7 +19,9 @@ a {
   color: indigo;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: Raleway, Helvetica, sans-serif;
 }
 a {
