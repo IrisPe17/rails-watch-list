@@ -1,6 +1,7 @@
 <div class="banner">
   <h1> Lists</h1>
 </div>
+<%= link_to "Create a list",  new_list_path, class: "btn btn-info m-3"%>
 <div class="container col-6 col-lg-4">
   <% @lists.each do |list| %>
     <% if list.photos.attached? %>
@@ -15,4 +16,3 @@
     <% end %>
   <% end %>
 </div>
-<%= link_to "Create a list",  new_list_path, class: "btn btn-info m-3"%>
