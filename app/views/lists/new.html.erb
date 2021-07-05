@@ -1,6 +1,6 @@
 <div class="container py-5">
   <div class="row">
-    <div class ="col-12 col-md-6 offset-lg-2">
+    <div class ="col col-lg-6 offset-lg-3">
       <h2>Create a new list</h2>
       <%= simple_form_for(@list) do |f| %>
         <%= f.error_notification %>
@@ -9,8 +9,8 @@
           <%= f.input :name %>
           <%= f.input :photos, as: :file, input_html: { multiple: true } %>
         </div>
-        <div class="form-actions">
-          <%= f.button :submit, class: 'btn btn-info m-3' %>
+        <div class="form-actions mt-3 text-center">
+          <%= f.button :submit, class: 'btn btn-info' %>
         </div>
       <% end %>
     </div>
