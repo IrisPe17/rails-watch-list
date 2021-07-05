@@ -3,9 +3,16 @@
 </div>
 <div class="container col-6 col-lg-4">
   <% @lists.each do |list| %>
-    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(assets/cinema.jpg)">
-      <%= link_to list.name, list_path(list)%>
-    </div>
+    <% if list.photos.attached? %>
+      <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= rails_blob_url(list.photos.first) %>;)" >
+        <%= link_to list.name, list_path(list)%>
+      </div>
+      <%# <div class="hero_image" style="background-image: url(<%= article.image_url %>
+    <% else %>
+      <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(assets/cinema.jpg)">
+        <%= link_to list.name, list_path(list)%>
+      </div>
+    <% end %>
   <% end %>
 </div>
 <%= link_to "Create a list",  new_list_path, class: "btn btn-info m-3"%>
