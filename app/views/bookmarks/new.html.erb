@@ -1,8 +1,7 @@
 <div class="banner">
   <h1>Create a Movie bookmark</h1>
-  <p><%= link_to 'Back home', lists_path, class: "btn btn-info m-3" %></p>
 </div>
-<div class="container col-6 col-lg-4 mt-2">
+<div class="container col-12 col-md-8 col-lg-6 mt-3">
   <h3>Add a movie to <%= @list.name %> list </h3>
   <%= simple_form_for [@list, @bookmark] do |f| %>
     <%= f.input :comment, placeholder: 'Enter your comment' %>
